@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-// import resume from "../pages/about/michael-yeates-resume.pdf";
+import resume from "../pages/about/resume.pdf";
 
-const AboutMe = ({ name, email, location, availability, brand }) => {
+const AboutMe = ({ name, email, location, availability }) => {
   const [ref, inView] = useInView({
     threshold: 0.2,
     triggerOnce: true,
@@ -17,21 +17,20 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     setDownloading(false);
   }, [downloading]);
 
-  // const handleDownload = () => {
-  //   setDownloading(true);
-  //   const link = document.createElement("a");
-  //   link.href = resume;
-  //   link.download = "Michael-Yeates-Resume.pdf";
-  //   link.onload = () => {
-  //     link.remove();
-  //     setDownloading(false);
-  //   };
-  //   document.body.appendChild(link);
-  //   link.click();
-  // };
+  const handleDownload = () => {
+    setDownloading(true);
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "Michael-Yeates-Resume.pdf";
+    link.onload = () => {
+      link.remove();
+      setDownloading(false);
+    };
+    document.body.appendChild(link);
+    link.click();
+  };
 
   return (
-    // <p style={{ color: "grey" }}>Stay tuned for updates!</p>
     <div className="aboutContainer container">
       <div className="row">
         <motion.div
@@ -52,10 +51,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>I'm a Software Engineer who crafts amazing digital experiences!</h5>
-            <div className="contentDescription">
-              <p>{brand}</p>
-            </div>
+            <h5>I'm a Full Stack Developer building seamless digital experiences from front-end design to back-end development.</h5>
             <div className="infoContainer">
               <div className="row">
                 <div className="col-12 col-md-6 info">
@@ -81,7 +77,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               </div>
             </div>
             <div className="buttonContainer">
-              <button className="btn downloadCV" /*onClick={handleDownload}*/ disabled={downloading}>
+              <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
                 {downloading ? "Downloading..." : "Download Resume"}
               </button>{" "}
               <SocialIcons />
