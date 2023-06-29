@@ -21,7 +21,7 @@ const AboutMe = ({ name, email, location, availability }) => {
     setDownloading(true);
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Michael-Yeates-Resume.pdf";
+    link.download = "Abhoy Gorai - Resume.pdf";
     link.onload = () => {
       link.remove();
       setDownloading(false);
@@ -51,7 +51,10 @@ const AboutMe = ({ name, email, location, availability }) => {
         >
           <div className="contentContainer">
             <h4>Nice to meet you</h4>
-            <h5>I'm a Full Stack Developer building seamless digital experiences from front-end design to back-end development.</h5>
+            <h5>
+              I'm a Full Stack Developer building seamless digital experiences
+              from front-end design to back-end development.
+            </h5>
             <div className="infoContainer">
               <div className="row">
                 <div className="col-12 col-md-6 info">
@@ -75,9 +78,63 @@ const AboutMe = ({ name, email, location, availability }) => {
                   <p>{availability}</p>
                 </div>
               </div>
+              <span>Technologies:</span>
+              <div className="tech-stack-logo">
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+                  alt="cplusplus"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                  alt="javascript"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+                  alt="html"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
+                  alt="CSS"
+                  height="40"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                  alt="nodejs"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                  alt="react"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png"
+                  alt="tailwind"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+                  alt="python"
+                  width="40"
+                  height="40"
+                />
+              </div>
             </div>
             <div className="buttonContainer">
-              <button className="btn downloadCV" onClick={handleDownload} disabled={downloading}>
+              <button
+                className="btn downloadCV"
+                onClick={handleDownload}
+                disabled={downloading}
+              >
                 {downloading ? "Downloading..." : "Download Resume"}
               </button>{" "}
               <SocialIcons />

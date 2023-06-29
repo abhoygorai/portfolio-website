@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Full Stack developer",
+    "company": "BlokMiner",
+    "image": "./projectImages/blokminers-logo.png",
+    "description": "Developed an admin dashboard for one of the biggest NFT Marketplace in India. Developed a MERN stack E-Commerce platform for event ticket purchasing.",
+    "technologies": "MERN | AWS | Tailwind",
+    "bgcolor": "#f37737",
+    "proof": "./projectImages/fullstack.pdf",
+    "id": "1"
+  },
+  {
+    "title": "Graphics Designer",
+    "company": "BlokMiner",
+    "image": "./projectImages/blokminers-logo.png",
+    "description": "I was responsible for designing and creating all the marketing graphical content. created more than 50 designs for marketing campaign.",
+    "technologies": "Figma | Canva | Photoshop",
+    "bgcolor": "#f85781",
+    "proof": "./projectImages/graphics.pdf",
+    "id": "2"
+  },
+
+  {
+    "title": "Project Intern",
+    "company": "IEEE CUSB",
+    "image": "./projectImages/ieee-logo.png",
+    "description": "I worked in a team who developed a ML model to detect pollen intensity in different regions. We also developed an UI for the application in figma.",
+    "technologies": "Figma | UI/UX Design  | ML",
+    "bgcolor": "#ffcc33",
+    "proof": "",
+    "id": "3"
+  }
+  
+]

@@ -18,9 +18,9 @@
 }
 
 .personalImage img {
-  height: 250px;
+  height: 390px;
   z-index: 50;
-  border-radius: 250px;
+  border-radius: 390px;
   border: 1px solid var(--grey);
 }
 
@@ -81,6 +81,10 @@
   margin-right: var(--sm-spacing);
 }
 
+.tech-stack-logo img {
+  margin: 7px;
+}
+
 .downloadCV {
   margin-top: var(--sm-spacing);
   margin-bottom: var(--sm-spacing);
@@ -108,14 +112,14 @@
 
 @media (min-width: 992px) {
   .personalImage img {
-    height: 330px;
+    height: 390px;
     z-index: 50;
     border-radius: 0;
     padding: 6px;
   }
 
   .personalImage {
-    height: 330px;
+    height: 390px;
 
     display: flex;
     align-items: center;
