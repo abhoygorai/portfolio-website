@@ -53,6 +53,7 @@
 .projectTitle {
   font-size: 24px;
   padding: 10px 0;
+  text-align: center;
 }
 
 .githubLink {
@@ -89,6 +90,7 @@
 
 .projectDescription {
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 /* --- MEDIA QUEIRES --- */
@@ -110,13 +112,13 @@
     transition: all 0.3s ease-in-out;
   }
 
-  .projectCard:hover .imageContainer {
+  /* .projectCard:hover .imageContainer {
     transform: translateX(-70%);
   }
 
   .projectCard:hover .textWrap {
     transform: translateX(-250%);
-  }
+  } */
 
   .projectCard:hover::before {
     opacity: 0;

@@ -45,9 +45,9 @@ const Portfolio = () => {
         <ExperienceList />
       </div>
       <PageHeader title="Projects" description="Coming Soon..." />
-      {/* <div className="row">
+      <div className="row">
         <ProjectList />
-      </div> */}
+      </div>
     </section>
   );
 };
