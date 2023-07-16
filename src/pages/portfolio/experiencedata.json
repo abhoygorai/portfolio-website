@@ -3,7 +3,7 @@
     "title": "Full Stack developer",
     "company": "BlokMiner",
     "image": "./projectImages/blokminers-logo.png",
-    "description": "Developed an admin dashboard for one of the biggest NFT Marketplace in India. Developed a MERN stack E-Commerce platform for event ticket purchasing.",
+    "description": "I developed an admin dashboard for a major NFT Marketplace in India using React. I also created a MERN stack E-Commerce platform for event ticket purchasing. Both projects were designed with user experience in mind and demonstrate my skills in web development and ability to deliver high-quality solutions",
     "technologies": "MERN | AWS | Tailwind",
     "bgcolor": "#f37737",
     "proof": "./projectImages/fullstack.pdf",
@@ -13,7 +13,7 @@
     "title": "Graphics Designer",
     "company": "BlokMiner",
     "image": "./projectImages/blokminers-logo.png",
-    "description": "I was responsible for designing and creating all the marketing graphical content. created more than 50 designs for marketing campaign.",
+    "description": "As the lead designer for our marketing campaign, I was responsible for creating all of the graphical content. This included designing more than 50 unique pieces that were used in various marketing materials. My designs helped to increase the effectiveness of our campaign and contributed to its overall success.",
     "technologies": "Figma | Canva | Photoshop",
     "bgcolor": "#f85781",
     "proof": "./projectImages/graphics.pdf",
@@ -30,5 +30,4 @@
     "proof": "",
     "id": "3"
   }
-  
 ]
