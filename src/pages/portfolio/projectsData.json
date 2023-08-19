@@ -24,8 +24,8 @@
     "image": "./projectImages/team.png",
     "technologies": "JS | Node | Bootstrap | OOP | TTD",
     "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
-    "github": "https://github.com/mdyeates/team-dashboard",
-    "deployed": "https://drive.google.com/file/d/1_atUXTM-L9r4NccsrPaaWqPyNu37ftwH/view",
+    "github": "",
+    "deployed": "",
     "bgcolor": "#6c4bf4",
     "id": "3"
   }

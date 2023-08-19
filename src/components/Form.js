@@ -1,13 +1,8 @@
-import { useInView } from "react-intersection-observer";
-import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Form = () => {
-  const [ref, inView] = useInView({
-    threshold: 0,
-    triggerOnce: true,
-  });
-
+  const form = useRef();
   const [success, setSuccess] = useState(false);
 
   const [formData, setFormData] = useState({
@@ -25,35 +20,26 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    const config = {
-      SecureToken: "1a44b509-89bf-4ee5-b036-b4aee86d5add",
-      To: "abhoygorai10@gmail.com",
-      From: "abhoygorai10@gmail.com",
-      Subject: formData.subject,
-      Body: `Name: ${formData.name}<br/>Email: ${formData.email}, Message: ${formData.message}`,
-    };
-
-    if (window.Email) {
-      window.Email.send(config).then((e) => {
-        console.log(e);
-        setSuccess(true);
-      });
-    }
+    emailjs.send(
+      "service_opayapc",
+      "template_x2iwona",
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        subject: formData.subject,
+      },
+      "xmcpoys2LJhQLbK8s"
+    );
+    e.target.reset();
+    setSuccess(true);
   };
 
   return (
-    <motion.form
-      action=""
-      ref={ref}
-      className="contactForm"
-      initial={{ x: "-10vw", opacity: 0 }}
-      animate={inView ? { x: 0, opacity: 1 } : { x: "-10vw", opacity: 0 }}
-      transition={{ duration: 0.4, ease: "easeInOut" }}
-      // onSubmit={handleSubmit}
-    >
+    <form ref={form} className="contactForm" onSubmit={sendEmail}>
       <h4 className="contentTitle">Message Me</h4>
       <div
         className="col-12 col-md-6 formGroup"
@@ -110,11 +96,16 @@ const Form = () => {
         ></textarea>
       </div>
       <div className="col-12 formGroup formSubmit">
-        <button className="btn">
+        <button
+          className="btn"
+          // onClick={sendEmail}
+          type="submit"
+          disabled={success}
+        >
           {success ? "Message Sent" : "Send Message"}
         </button>
       </div>
-    </motion.form>
+    </form>
   );
 };
 
