@@ -5,25 +5,25 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  margin-top: var(--spacing);
   padding-bottom: var(--spacing);
 }
 
 .projectCard {
   color: white;
-  border-radius: 3px;
-  margin-bottom: 20px;
+  /* border-radius: 3px; */
+  height: 200px;
   overflow: hidden;
   position: relative;
+  display: flex;
   transition: all 0.5s ease-in-out;
-  flex-direction: column;
   padding: 0 !important;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .row {
   padding: 0;
-  margin: 0;
+  margin: 0 0 40px 0;
 }
 
 .textWrap {
@@ -35,10 +35,17 @@
   text-decoration: none;
 }
 
+.imageContainer {
+  display: flex;
+  align-items: center;
+  height: full;
+}
+
 .imageContainer img {
-  height: 12em;
-  margin-top: 25px;
+  height: 8em;
+  align-items: center;
   transition: all 1.3s ease-in-out;
+  justify-items: center;
 }
 
 .tech {
@@ -93,13 +100,28 @@
   text-align: justify;
 }
 
+ol {
+  margin-bottom: 40px;
+}
+
+.description-text-div img {
+  width: 150px;
+  margin: 10px;
+}
+
+.description-images{
+  width: auto;
+  justify-content: center;
+}
+
 /* --- MEDIA QUEIRES --- */
 
 @media (min-width: 750px) {
   .projectCard {
     flex-direction: row;
     padding: var(--sm-spacing) !important;
-    height: 350px;
+    height: 300px;
+    margin: 0px;
   }
 
   .portfolio {
@@ -107,30 +129,24 @@
     padding-right: var(--spacing);
   }
 
-  .imageContainer {
-    transform: translateX(30%);
-    transition: all 0.3s ease-in-out;
-  }
-
-  /* .projectCard:hover .imageContainer {
-    transform: translateX(-70%);
-  }
-
-  .projectCard:hover .textWrap {
-    transform: translateX(-250%);
-  } */
-
   .projectCard:hover::before {
     opacity: 0;
   }
 
   .projectCard:hover .imageContainer img {
-    scale: 1.4;
+    scale: 1.1;
   }
 
   .imageContainer {
     transform: translateX(30%);
     transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .imageContainer img {
+    height: 12rem;
   }
 
   .textWrap {
@@ -148,5 +164,10 @@
 
   .tech {
     font-size: 14px;
+  }
+
+  .description-text-div img {
+    width: 250px;
+    margin: 10px;
   }
 }

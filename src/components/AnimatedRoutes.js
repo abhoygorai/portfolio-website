@@ -4,7 +4,8 @@ import Landing from "../pages/landing/Landing";
 import About from "../pages/about/About";
 import Portfolio from "../pages/portfolio/Portfolio";
 import Contact from "../pages/contact/Contact";
-import Experince from "../pages/description/Experience"
+// import Experince from "../pages/description/Experience"
+import PortflioDescription from "../pages/description/PortflioDescription";
 import PageNotFound from "../pages/404/PageNotFound";
 
 const AnimatedRoutes = ({ personalDetails }) => {
@@ -25,7 +26,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
         }
       />
       <Route path="/portfolio" element={<Portfolio />} />
-      <Route path="/portfolio/experience/:id" element={<Experince />} />
+      <Route path="/portfolio/:id" element={<PortflioDescription />} />
       <Route
         path="/contact"
         element={

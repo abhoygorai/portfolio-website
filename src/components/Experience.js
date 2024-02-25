@@ -24,13 +24,13 @@ const Experience = ({
 
   const navigate = useNavigate();
   const handleOpenModal = () => {
-    navigate(`/portfolio/experience/${id}`);
+    navigate(`/portfolio/${id}`);
   };
 
   return (
     <motion.div
       ref={ref}
-      className="col-sm-12 col-lg-6"
+      className="col-sm-12 col-lg-6 p-2"
       variants={variants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
@@ -38,10 +38,10 @@ const Experience = ({
     >
       <div
         style={{ backgroundColor: color }}
-        className="projectCard d-flex align-items-center justify-content-center p-5"
+        className="projectCard"
         onClick={handleOpenModal}
       >
-        <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-5">
+        <div className="textWrap col-6 d-flex flex-column justify-content-center align-items-center m-4">
           <p className="tech">
             <em>{technologies}</em>
           </p>
@@ -51,7 +51,8 @@ const Experience = ({
           <h3 className="projectTitle">{title}</h3>
           <span className="viewWork">View Work &#8594;</span>
         </div>
-        <div className="imageContainer col-6 d-flex align-items-center justify-content-center">
+
+        <div className="imageContainer">
           <img src={image} alt="Laptop displaying the application" />
         </div>
       </div>

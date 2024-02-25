@@ -5,9 +5,19 @@
     "image": "./projectImages/blokminers-logo.png",
     "description": "I developed an admin dashboard for a major NFT Marketplace in India using React. I also created a MERN stack E-Commerce platform for event ticket purchasing. Both projects were designed with user experience in mind and demonstrate my skills in web development and ability to deliver high-quality solutions",
     "technologies": "MERN | AWS | Tailwind",
-    "bgcolor": "#f37737",
+    "bgcolor": "#3868ab",
     "proof": "./projectImages/fullstack.pdf",
     "id": "1"
+  },
+  {
+    "title": "Mentor",
+    "company": "Intel",
+    "image": "./projectImages/intel-logo.png",
+    "description": "As the lead designer for our marketing campaign, I was responsible for creating all of the graphical content. This included designing more than 50 unique pieces that were used in various marketing materials. My designs helped to increase the effectiveness of our campaign and contributed to its overall success.",
+    "technologies": "AIML | Teaching",
+    "bgcolor": "#3868ab",
+    "proof": "./projectImages/mentor.pdf",
+    "id": "2"
   },
   {
     "title": "Graphics Designer",
@@ -15,19 +25,18 @@
     "image": "./projectImages/blokminers-logo.png",
     "description": "As the lead designer for our marketing campaign, I was responsible for creating all of the graphical content. This included designing more than 50 unique pieces that were used in various marketing materials. My designs helped to increase the effectiveness of our campaign and contributed to its overall success.",
     "technologies": "Figma | Canva | Photoshop",
-    "bgcolor": "#f85781",
+    "bgcolor": "#3868ab",
     "proof": "./projectImages/graphics.pdf",
-    "id": "2"
+    "id": "3"
   },
-
   {
     "title": "Project Intern",
     "company": "IEEE CUSB",
     "image": "./projectImages/ieee-logo.png",
     "description": "I worked in a team who developed a ML model to detect pollen intensity in different regions. We also developed an UI for the application in figma.",
     "technologies": "Figma | UI/UX Design  | ML",
-    "bgcolor": "#ffcc33",
+    "bgcolor": "#3868ab",
     "proof": "",
-    "id": "3"
+    "id": "4"
   }
 ]

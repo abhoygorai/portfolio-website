@@ -44,7 +44,7 @@ const Portfolio = () => {
       <div className="row">
         <ExperienceList />
       </div>
-      <PageHeader title="Projects" description="Coming Soon..." />
+      <PageHeader title="Projects" description="Explore the projects I made" />
       <div className="row">
         <ProjectList />
       </div>

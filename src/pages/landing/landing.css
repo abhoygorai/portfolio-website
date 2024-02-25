@@ -19,7 +19,7 @@
 }
 
 .landing .name {
-  font-size: 60px;
+  font-size: 50px;
 }
 .landing .description {
   font-size: 22px;
@@ -63,7 +63,7 @@
 
 @media (min-width: 1200px) {
   .landing .name {
-    font-size: 180px;
+    font-size: 160px;
   }
 
   .landing .description {

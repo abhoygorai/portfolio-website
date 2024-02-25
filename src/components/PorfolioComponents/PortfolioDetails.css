@@ -1,0 +1,131 @@
+.container-lg {
+    color: white;
+    width: 40%;
+  }
+  
+  .container-inside {
+    flex-direction: column;
+  }
+  
+  .image-title-div {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+  }
+  
+  .company-image {
+    width: 25%;
+    padding: 20px;
+  }
+  
+  .title-text-div {
+    padding: 10px;
+    margin-right: 30px;
+  }
+  
+  .description-text-div {
+    text-align: justify;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 2.2;
+  }
+
+  li {
+    margin-top: 20px;
+  }
+
+  li::marker {
+    color: white;
+  }
+  
+  .company,
+  .title,
+  .technologies-text {
+    margin: 10px;
+  }
+  
+  .dowload-button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .container-lg {
+      color: white;
+      width: 100%;
+    }
+    .container-inside {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .company-image {
+      width: 70%;
+      border-radius: 30px;
+      border: 2px solid gray;
+      padding: 10%;
+    }
+  
+    .image-title-div {
+      padding: 20px 20px 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      margin: 0;
+    }
+  
+    .title-text-div {
+      padding-bottom: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .title-text-div .title {
+      margin-top: 10px;
+    }
+  
+    .title-text-div .company {
+      margin-top: 10px;
+    }
+  
+    .technologies-text {
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  
+    .description-text-div {
+      padding: 10px 20px 10px 20px;
+      text-align: justify;
+    }
+  
+    .description-text-div .description {
+      font-weight: 200;
+      line-height: 1.8;
+    }
+  
+    .company,
+    .title,
+    .technologies-text {
+      margin: 0;
+    }
+  
+    .dowload-button-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+  }
+  

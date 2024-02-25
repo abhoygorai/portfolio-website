@@ -1,15 +1,5 @@
 [
   {
-    "title": "S-Converter",
-    "image": "./projectImages/sconverter.png",
-    "description": "Introducing S-Converter, a lightweight desktop application that swiftly converts JPG files to PDF format. Powered by Electron.js, S-Converter offers a seamless and efficient solution for transforming images into portable and universally compatible PDF documents. With S-Converter, users can effortlessly convert JPG files to PDF with just a few clicks. The application's minimalist interface ensures a straightforward user experience, allowing users of all technical levels to navigate the conversion process effortlessly. Simply drag and drop the desired JPG files into S-Converter or use the integrated file explorer to select them manually.",
-    "technologies": "Electron Js | Node Js | Tailwind",
-    "github": "https://github.com/abhoygorai/jpg-to-pdf-application",
-    "deployed": "",
-    "bgcolor": "#f37737",
-    "id": "1"
-  },
-  {
     "title": "Hostel Outpass System", 
     "image": "./projectImages/pass.png",
     "technologies": "Flutter | NodeJs | MongoDB",
@@ -17,7 +7,17 @@
     "github": "",
     "deployed": "",
     "bgcolor": "#29cbe0",
-    "id": "2"
+    "id": "11"
+  },
+  {
+    "title": "S-Converter",
+    "image": "./projectImages/sconverter.png",
+    "description": "Introducing S-Converter, a lightweight desktop application that swiftly converts JPG files to PDF format. Powered by Electron.js, S-Converter offers a seamless and efficient solution for transforming images into portable and universally compatible PDF documents. With S-Converter, users can effortlessly convert JPG files to PDF with just a few clicks. The application's minimalist interface ensures a straightforward user experience, allowing users of all technical levels to navigate the conversion process effortlessly. Simply drag and drop the desired JPG files into S-Converter or use the integrated file explorer to select them manually.",
+    "technologies": "Electron Js | Node Js | Tailwind",
+    "github": "https://github.com/abhoygorai/jpg-to-pdf-application",
+    "deployed": "",
+    "bgcolor": "#f37737",
+    "id": "12"
   },
   {
     "title": "Team",
@@ -27,6 +27,6 @@
     "github": "",
     "deployed": "",
     "bgcolor": "#6c4bf4",
-    "id": "3"
+    "id": "13"
   }
 ]
