@@ -104,11 +104,6 @@ ol {
   margin-bottom: 40px;
 }
 
-.description-text-div img {
-  width: 150px;
-  margin: 10px;
-}
-
 .description-images{
   width: auto;
   justify-content: center;
@@ -166,8 +161,4 @@ ol {
     font-size: 14px;
   }
 
-  .description-text-div img {
-    width: 250px;
-    margin: 10px;
-  }
 }

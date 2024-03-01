@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/projectsData.json";
 
-function PortfolioDetails12() {
+function PortfolioDetails13() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 1;
+  const index = 3;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -44,30 +44,33 @@ function PortfolioDetails12() {
           </div>
           <div className="description-text-div">
             <h4 className="description">
-              This project was a desktop application that was used to convert
-              images to pdf. The motivation behind this project was my brother.
-              He used to do this conversion a lot in his work using some free
-              online web applications. But he wanted a solution that can do that
-              without internet and without any size limitation.
+              This project is one of my very first website I made. It was a blog website of me where I can post my own blogs. I made this project using NodeJs and EJS. It is connected wiht MongoDB Atlas which is a cloud based database.  
             </h4>
 
             <div>
               <img
                 className="pc-image"
-                src="../projectImages/portfolio12-images/1.png"
+                src="../projectImages/portfolio14-images/1.png"
                 alt="image"
               />
             </div>
 
             <h4 className="description">
-              I used ElectronJs to develop this simple app. It was focused on a
-              single purpose but solving a real problem.
+              This page will contain all my blogs and I made a separate page that will be used to push the blogs in the main site.
             </h4>
+
+            <div>
+              <img
+                className="pc-image"
+                src="../projectImages/portfolio14-images/2.png"
+                alt="image"
+              />
+            </div>
           </div>
           <div className="dowload-button-div">
             <a
               className="btn"
-              href="https://github.com/abhoygorai/jpg-to-pdf-application"
+              href="https://github.com/abhoygorai/blogwebsite"
               target="_blank"
               rel="noreferrer"
             >
@@ -80,4 +83,4 @@ function PortfolioDetails12() {
   );
 }
 
-export default PortfolioDetails12;
+export default PortfolioDetails13;

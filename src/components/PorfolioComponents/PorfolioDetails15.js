@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/projectsData.json";
 
-function PortfolioDetails12() {
+function PortfolioDetails13() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 1;
+  const index = 4;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -44,30 +44,22 @@ function PortfolioDetails12() {
           </div>
           <div className="description-text-div">
             <h4 className="description">
-              This project was a desktop application that was used to convert
-              images to pdf. The motivation behind this project was my brother.
-              He used to do this conversion a lot in his work using some free
-              online web applications. But he wanted a solution that can do that
-              without internet and without any size limitation.
+              We made this project to deal with one very crucial issue we discovered. In today's world most of te study is getting towards online mode. In online study the process is very similar. It can be a recorded lecture or a live class. We in this project are focussing on the attention of the student in the work he is doing. Which means we are taking snapshots of the students who are watching the online course and we are using some ML models to determine their emotions. Then we are filtering the emotions in two categories, either they are positive or they are negative. Then we are determining that if the student is not feeling very confident we are offering him some fun educational games that can refresh their mind. 
             </h4>
 
             <div>
               <img
                 className="pc-image"
-                src="../projectImages/portfolio12-images/1.png"
+                src="../projectImages/portfolio15-images/1.png"
                 alt="image"
               />
             </div>
 
-            <h4 className="description">
-              I used ElectronJs to develop this simple app. It was focused on a
-              single purpose but solving a real problem.
-            </h4>
           </div>
           <div className="dowload-button-div">
             <a
               className="btn"
-              href="https://github.com/abhoygorai/jpg-to-pdf-application"
+              href="https://github.com/abhoygorai/hackmon-bitsInBinary"
               target="_blank"
               rel="noreferrer"
             >
@@ -80,4 +72,4 @@ function PortfolioDetails12() {
   );
 }
 
-export default PortfolioDetails12;
+export default PortfolioDetails13;

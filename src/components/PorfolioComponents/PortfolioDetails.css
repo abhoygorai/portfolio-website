@@ -34,6 +34,21 @@
     line-height: 2.2;
   }
 
+  .sq-image{
+    width: 45%;
+    margin: 10px;  
+  }
+
+  .pc-image{
+    width: 95%;
+    margin: 10px;  
+  }
+
+  .mb-image{
+    width: 40%;
+    margin: 10px;  
+  }
+
   li {
     margin-top: 20px;
   }
@@ -53,6 +68,8 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
+    margin-bottom: 50px;
+    text-decoration: none;
   }
   
   @media only screen and (max-width: 900px) {
@@ -113,6 +130,19 @@
     .description-text-div .description {
       font-weight: 200;
       line-height: 1.8;
+    }
+
+    .sq-image{
+      width: 40%;
+      margin: 10px;  
+    }
+    .pc-image{
+      width: 95%;
+      margin: 10px;  
+    }
+    .mb-image{
+      width: 90%;
+      margin: 10px;  
     }
   
     .company,

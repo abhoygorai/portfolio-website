@@ -9,6 +9,8 @@ import PortfolioDetails4 from "../../components/PorfolioComponents/PortfolioDeta
 import PortfolioDetails11 from "../../components/PorfolioComponents/PortfolioDetails11";
 import PortfolioDetails12 from "../../components/PorfolioComponents/PortfolioDetails12";
 import PortfolioDetails13 from "../../components/PorfolioComponents/PortfolioDetails13";
+import PortfolioDetails14 from "../../components/PorfolioComponents/PortfolioDetails14"
+import PortfolioDetails15 from "../../components/PorfolioComponents/PorfolioDetails15"
 
 function PortflioDescription() {
   const param = useParams("id");
@@ -29,6 +31,8 @@ function PortflioDescription() {
     11: <PortfolioDetails11 />,
     12: <PortfolioDetails12 />,
     13: <PortfolioDetails13 />,
+    14: <PortfolioDetails14 />,
+    15: <PortfolioDetails15 />,
   }
 
   console.log(data);

@@ -16,17 +16,39 @@
     "technologies": "Electron Js | Node Js | Tailwind",
     "github": "https://github.com/abhoygorai/jpg-to-pdf-application",
     "deployed": "",
-    "bgcolor": "#f37737",
+    "bgcolor": "#29cbe0",
     "id": "12"
   },
   {
-    "title": "Team",
-    "image": "./projectImages/team.png",
-    "technologies": "JS | Node | Bootstrap | OOP | TTD",
+    "title": "HealthApp",
+    "image": "./projectImages/healthapp.png",
+    "technologies": "ReactJS | ExpressJs | NodeJS",
     "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
     "github": "",
     "deployed": "",
-    "bgcolor": "#6c4bf4",
+    "bgcolor": "#29cbe0",
     "id": "13"
+  },
+
+  {
+    "title": "Blog Website",
+    "image": "./projectImages/blog.png",
+    "technologies": "NodeJs | EJS | MongoDB",
+    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "github": "",
+    "deployed": "",
+    "bgcolor": "#29cbe0",
+    "id": "14"
+  },
+
+  {
+    "title": "Actify",
+    "image": "./projectImages/actify.png",
+    "technologies": "NodeJs | ML | MongoDB",
+    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "github": "",
+    "deployed": "",
+    "bgcolor": "#29cbe0",
+    "id": "15"
   }
 ]

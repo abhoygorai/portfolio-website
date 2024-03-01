@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
-import data from "../../pages/portfolio/projectsData.json"
+import data from "../../pages/portfolio/projectsData.json";
 
 function PortfolioDetails13() {
   const [downloading, setDownloading] = useState(false);
@@ -32,7 +32,7 @@ function PortfolioDetails13() {
           <div className="image-title-div">
             <img
               className="company-image mx-auto"
-              src= {"../" + data[index].image}
+              src={"../" + data[index].image}
               alt="logo"
             />
 
@@ -43,32 +43,50 @@ function PortfolioDetails13() {
             </div>
           </div>
           <div className="description-text-div">
-            {/* <ol>
-              <li>
-                Developed an admin dashboard for one of the biggest NFT Marketplaces in India. This admin panel will be used by the marketplace admin to launch and manage the NFTs in the market.
-              </li>
-              <li>
-                Developed a MERN stack E-Commerce platform for event ticket purchasing. This application will be used to book tickets for different types of events. Users can also register for their events and sell the tickets on that website. More than 4000 tickets were booked after deployment.
-              </li>
-              <li>
-                Worked in the team developing an internal management system for a company which helped them to manage their accounting information.
-              </li>
-            </ol> */}
-            <h4 className="description">The data is coming soon</h4>
+            <h4 className="description">
+              It was our semester minor project. Our goal is to give a solution that can give a idea of a foods that they can consume within a calory limit. 
+            </h4>
+
+            <div>
+              <img
+                className="pc-image"
+                src="../projectImages/portfolio13-images/1.png"
+                alt="image"
+              />
+               <img
+                className="pc-image"
+                src="../projectImages/portfolio13-images/2.png"
+                alt="image"
+              />
+               <img
+                className="pc-image"
+                src="../projectImages/portfolio13-images/3.png"
+                alt="image"
+              />
+            </div>
+
+            <h4 className="description">
+              This project is developed using ReactJs framework for the frontend and ExpressJs for backend. 
+            </h4>
           </div>
-          {/* <div className="dowload-button-div">
-            {data[index].proof === "../../" ? (
-              ""
-            ) : (
-              <button
-                className="btn"
-                onClick={handleDownload}
-                disabled={downloading}
-              >
-                Download proof
-              </button>
-            )}
-          </div> */}
+          <div className="dowload-button-div">
+            <a
+              className="btn"
+              href="https://github.com/abhoygorai/health-app-2-frontend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Code
+            </a>
+            <a
+              className="btn"
+              href="https://github.com/abhoygorai/diet-app-backend"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Backend Code
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -127,6 +127,24 @@ const AboutMe = ({ name, email, location, availability }) => {
                   width="40"
                   height="40"
                 />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                  alt="python"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/java/java-original.svg"
+                  alt="python"
+                  width="40"
+                  height="40"
+                />
+                <img
+                  src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/mongodb/mongodb-plain-wordmark.svg"
+                  alt="python"
+                  width="40"
+                  height="40"
+                />
               </div>
             </div>
             <div className="buttonContainer">

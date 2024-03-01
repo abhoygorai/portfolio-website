@@ -1,28 +1,17 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
-import data from "../../pages/portfolio/projectsData.json"
+import data from "../../pages/portfolio/projectsData.json";
 
 function PortfolioDetails11() {
-  const [downloading, setDownloading] = useState(false);
-
-  useEffect(() => {
-    setDownloading(false);
-  }, [downloading]);
-
   const index = 0;
 
-  const handleDownload = () => {
-    setDownloading(true);
-    const link = document.createElement("a");
-    link.href = "../" + data[index].proof;
-    link.download = data[index].title + ".pdf";
-    link.onload = () => {
-      link.remove();
-      setDownloading(false);
-    };
-    document.body.appendChild(link);
-    link.click();
+  const nagigateToLink = () => {
+    window.open(
+      "http://www.google.com",
+      "_blank",
+      "toolbar=0,location=0,menubar=0"
+    );
   };
 
   return (
@@ -32,7 +21,7 @@ function PortfolioDetails11() {
           <div className="image-title-div">
             <img
               className="company-image mx-auto"
-              src= {"../" + data[index].image}
+              src={"../" + data[index].image}
               alt="logo"
             />
 
@@ -43,32 +32,64 @@ function PortfolioDetails11() {
             </div>
           </div>
           <div className="description-text-div">
-            {/* <ol>
-              <li>
-                Developed an admin dashboard for one of the biggest NFT Marketplaces in India. This admin panel will be used by the marketplace admin to launch and manage the NFTs in the market.
-              </li>
-              <li>
-                Developed a MERN stack E-Commerce platform for event ticket purchasing. This application will be used to book tickets for different types of events. Users can also register for their events and sell the tickets on that website. More than 4000 tickets were booked after deployment.
-              </li>
-              <li>
-                Worked in the team developing an internal management system for a company which helped them to manage their accounting information.
-              </li>
-            </ol> */}
-            <h4 className="description">The data is coming soon</h4>
+            <h4 className="description">
+              The project is focused on solving one very crucial problem I faced
+              in my Hostel. The process of generating outpass was very long and
+              it takes almost 10 min to make a pass for a single person. I
+              thought of making a project that will make the process fully
+              digital.
+            </h4>
+            <h5>Screenshots</h5>
+            <img
+              className="pc-image"
+              src="../projectImages/portfolio11-images/1.png"
+              alt="image"
+            />
+            <img
+              className="pc-image"
+              src="../projectImages/portfolio11-images/3.png"
+              alt="image"
+            />
+            <h4 className="description">
+              The project is focused on solving one very crucial problem I faced
+              in my Hostel. The process of generating outpass was very long and
+              it takes almost 10 min to make a pass for a single person. I
+              thought of making a project that will make the process fully
+              digital.
+            </h4>
+            <div>
+              <img
+                className="mb-image"
+                src="../projectImages/portfolio11-images/4.png"
+                alt="image"
+              />
+              <img
+                className="mb-image"
+                src="../projectImages/portfolio11-images/5.png"
+                alt="image"
+              />
+              <img
+                className="mb-image"
+                src="../projectImages/portfolio11-images/6.png"
+                alt="image"
+              />
+            </div>
+            <h4 className="description">
+              Feel free to email me if you want this type of software for your
+              needs. Open for freelancing.
+            </h4>
           </div>
-          {/* <div className="dowload-button-div">
-            {data[index].proof === "../../" ? (
-              ""
-            ) : (
-              <button
-                className="btn"
-                onClick={handleDownload}
-                disabled={downloading}
-              >
-                Download proof
-              </button>
-            )}
-          </div> */}
+          <div className="dowload-button-div">
+            <a
+              className="btn"
+              href="https://github.com/abhoygorai/HostelProject-backend"
+              target="_blank"
+              rel="noreferrer"
+              
+            >
+              GitHub Link
+            </a>
+          </div>
         </div>
       </div>
     </>

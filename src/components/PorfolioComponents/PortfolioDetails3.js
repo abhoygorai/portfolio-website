@@ -54,12 +54,12 @@ function PortfolioDetails2() {
 
             <h4 className="description">Some of my work</h4>
             <div className="description-images">
-              <img src="../projectImages/portfolio3-images/1.png" />
-              <img src="../projectImages/portfolio3-images/2.png" />
-              <img src="../projectImages/portfolio3-images/3.png" />
-              <img src="../projectImages/portfolio3-images/4.png" />
-              <img src="../projectImages/portfolio3-images/5.png" />
-              <img src="../projectImages/portfolio3-images/6.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/1.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/2.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/3.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/4.jpg" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/5.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/6.png" />
             </div>
           </div>
           <div className="dowload-button-div">
