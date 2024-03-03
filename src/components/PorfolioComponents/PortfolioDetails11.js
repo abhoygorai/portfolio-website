@@ -51,11 +51,7 @@ function PortfolioDetails11() {
               alt="image"
             />
             <h4 className="description">
-              The project is focused on solving one very crucial problem I faced
-              in my Hostel. The process of generating outpass was very long and
-              it takes almost 10 min to make a pass for a single person. I
-              thought of making a project that will make the process fully
-              digital.
+              The application is available in both website form and mobile application form. The fronend is developed using Flutter and the backend is of NodeJs. Here are some mobile screenshots.
             </h4>
             <div>
               <img
