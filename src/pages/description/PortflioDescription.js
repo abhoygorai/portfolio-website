@@ -11,6 +11,8 @@ import PortfolioDetails12 from "../../components/PorfolioComponents/PortfolioDet
 import PortfolioDetails13 from "../../components/PorfolioComponents/PortfolioDetails13";
 import PortfolioDetails14 from "../../components/PorfolioComponents/PortfolioDetails14"
 import PortfolioDetails15 from "../../components/PorfolioComponents/PorfolioDetails15"
+import PortfolioDetails16 from "../../components/PorfolioComponents/PortfolioDetails16"
+import PortfolioDetails17 from "../../components/PorfolioComponents/PortfolioDetails17"
 
 function PortflioDescription() {
   const param = useParams("id");
@@ -33,6 +35,8 @@ function PortflioDescription() {
     13: <PortfolioDetails13 />,
     14: <PortfolioDetails14 />,
     15: <PortfolioDetails15 />,
+    16: <PortfolioDetails16 />,
+    17: <PortfolioDetails17 />
   }
 
   console.log(data);

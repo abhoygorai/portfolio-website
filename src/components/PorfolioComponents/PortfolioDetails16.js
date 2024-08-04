@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/projectsData.json";
 
-function PortfolioDetails14() {
+function PortfolioDetails16() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 3;
+  const index = 5;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -44,33 +44,26 @@ function PortfolioDetails14() {
           </div>
           <div className="description-text-div">
             <h4 className="description">
-              This project is one of my very first website I made. It was a blog website of me where I can post my own blogs. I made this project using NodeJs and EJS. It is connected wiht MongoDB Atlas which is a cloud based database.  
+            I developed the backend for a social media platform featuring robust authentication and authorization, ensuring secure access to user-specific functionalities. The platform supports full content management capabilities, enabling users to create, edit, and delete posts, as well as handle media uploads. User interactions are enhanced with features such as liking, commenting, and a follow system, all of which boost engagement and community building. Security measures, including data encryption and rate limiting, ensure the protection of user data and the prevention of abuse. The project leveraged technologies like Node.js, Django, Spring Boot, PostgreSQL, and MongoDB, resulting in a secure, scalable, and interactive platform. 
             </h4>
-
-            <div>
-              <img
-                className="pc-image"
-                src="../projectImages/portfolio14-images/1.png"
-                alt="image"
-              />
-            </div>
-
+            <br></br>
             <h4 className="description">
-              This page will contain all my blogs and I made a separate page that will be used to push the blogs in the main site.
+                This was a part a task that was given by Toddle company as a part of their placement program. The link of the task is <a href="https://github.com/abhoygorai/social-media-backend/blob/master/Task-details.pdf" target="_blank">here</a>
             </h4>
 
-            <div>
+            {/* <div>
               <img
                 className="pc-image"
-                src="../projectImages/portfolio14-images/2.png"
+                src="../projectImages/portfolio15-images/1.png"
                 alt="image"
               />
-            </div>
+            </div> */}
+
           </div>
           <div className="dowload-button-div">
             <a
               className="btn"
-              href="https://github.com/abhoygorai/blogwebsite"
+              href="https://github.com/abhoygorai/social-media-backend"
               target="_blank"
               rel="noreferrer"
             >
@@ -83,4 +76,4 @@ function PortfolioDetails14() {
   );
 }
 
-export default PortfolioDetails14;
+export default PortfolioDetails16;

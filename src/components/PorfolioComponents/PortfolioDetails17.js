@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/projectsData.json";
 
-function PortfolioDetails14() {
+function PortfolioDetails17() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 3;
+  const index = 6;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -44,33 +44,42 @@ function PortfolioDetails14() {
           </div>
           <div className="description-text-div">
             <h4 className="description">
-              This project is one of my very first website I made. It was a blog website of me where I can post my own blogs. I made this project using NodeJs and EJS. It is connected wiht MongoDB Atlas which is a cloud based database.  
+            I developed a full stack web application for data visualization, featuring robust authentication to ensure secure user access. Users can apply various filters, such as keywords and timestamps, to customize their data views. The data is displayed in a paginated format, enhancing readability and navigation. The application demonstrates a smooth user experience with a demo of the login page and the main table page, showcasing the intuitive design and functionality.
+            </h4>
+            
+            <h4 className="description">
+                Here is the login and signup page
             </h4>
 
             <div>
               <img
                 className="pc-image"
-                src="../projectImages/portfolio14-images/1.png"
+                src="../projectImages/portfolio17-images/1.png"
                 alt="image"
               />
             </div>
 
             <h4 className="description">
-              This page will contain all my blogs and I made a separate page that will be used to push the blogs in the main site.
+                Here is the main console that is used form visualization.
             </h4>
 
             <div>
               <img
                 className="pc-image"
-                src="../projectImages/portfolio14-images/2.png"
+                src="../projectImages/portfolio17-images/2.png"
                 alt="image"
               />
             </div>
+
+            <h4 className="description">
+                This project utilizes modern technologies and frameworks to provide a powerful, user-friendly data visualization tool.
+            </h4>
+
           </div>
           <div className="dowload-button-div">
             <a
               className="btn"
-              href="https://github.com/abhoygorai/blogwebsite"
+              href="https://github.com/abhoygorai/hackmon-bitsInBinary"
               target="_blank"
               rel="noreferrer"
             >
@@ -83,4 +92,4 @@ function PortfolioDetails14() {
   );
 }
 
-export default PortfolioDetails14;
+export default PortfolioDetails17;

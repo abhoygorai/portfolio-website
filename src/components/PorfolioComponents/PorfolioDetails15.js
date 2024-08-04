@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/projectsData.json";
 
-function PortfolioDetails13() {
+function PortfolioDetails15() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
@@ -72,4 +72,4 @@ function PortfolioDetails13() {
   );
 }
 
-export default PortfolioDetails13;
+export default PortfolioDetails15;

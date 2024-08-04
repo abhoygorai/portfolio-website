@@ -50,5 +50,27 @@
     "deployed": "",
     "bgcolor": "#29cbe0",
     "id": "15"
+  },
+
+  {
+    "title": "Social Media Backend",
+    "image": "./projectImages/smb.png",
+    "technologies": "ExpressJs | API Dev | PostgreSQL",
+    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "github": "",
+    "deployed": "",
+    "bgcolor": "#29cbe0",
+    "id": "16"
+  },
+
+  {
+    "title": "Tabular",
+    "image": "./projectImages/wired.png",
+    "technologies": "FastAPI | Basic Web Dev | PostgreSQL",
+    "description": "Team Dashboard is a Node command-line application that takes in information about employees to generate a dynamic HTML web page.",
+    "github": "",
+    "deployed": "",
+    "bgcolor": "#29cbe0",
+    "id": "17"
   }
 ]
