@@ -19,15 +19,24 @@ const AboutMe = ({ name, email, location, availability }) => {
 
   const handleDownload = () => {
     setDownloading(true);
-    const link = document.createElement("a");
-    link.href = resume;
-    link.download = "Abhoy Gorai - Resume.pdf";
-    link.onload = () => {
-      link.remove();
-      setDownloading(false);
-    };
-    document.body.appendChild(link);
-    link.click();
+    
+    fetch(resume)
+      .then(response => response.blob())
+      .then(blob => {
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        link.href = url;
+        link.download = "Abhoy Gorai.pdf";
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        URL.revokeObjectURL(url); // Clean up the URL object
+        setDownloading(false);
+      })
+      .catch(() => {
+        setDownloading(false);
+        // Handle error
+      });
   };
 
   return (
