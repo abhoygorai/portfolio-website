@@ -79,7 +79,7 @@ function PortfolioDetails17() {
           <div className="dowload-button-div">
             <a
               className="btn"
-              href="https://github.com/abhoygorai/hackmon-bitsInBinary"
+              href="https://github.com/abhoygorai/tabular"
               target="_blank"
               rel="noreferrer"
             >
