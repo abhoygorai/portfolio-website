@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/experiencedata.json";
 
-// Blokminers fullstack intern
-function PortfolioDetails4() {
+// Vimo Intern
+function PortfolioDetails5() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 3;
+  const index = 4;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -45,28 +45,28 @@ function PortfolioDetails4() {
           </div>
           <div className="description-text-div">
             <ol>
-              <li>
-                Developed an admin dashboard for one of the biggest NFT
-                Marketplaces in India. This admin panel will be used by the
-                marketplace admin to launch and manage the NFTs in the market.
-              </li>
-              <li>
-                Developed a MERN stack E-Commerce platform for event ticket
-                purchasing. This application will be used to book tickets for
-                different types of events. Users can also register for their
-                events and sell the tickets on that website. More than 4000
-                tickets were booked after deployment.
-              </li>
-              <li>
-                Worked in the team developing an internal management system for
-                a company which helped them to manage their accounting
-                information.
-              </li>
+              <ul>
+                <li>
+                  Served as an <strong>SDE Intern at Vimo India Pvt Ltd</strong>
+                  , where I focused on enhancing the application’s security by
+                  identifying and eliminating potential threats and
+                  vulnerabilities.
+                </li>
+                <li>
+                  Upgraded outdated dependencies to modern versions,
+                  significantly boosting the application’s overall performance
+                  and security posture.
+                </li>
+                <li>
+                  Contributed to key infrastructure improvements by migrating
+                  critical third-party packages to internal modules and
+                  developing new features to support product growth.
+                </li>
+              </ul>
             </ol>
-            <h4 className="description"></h4>
           </div>
           <div className="dowload-button-div">
-            {data[index].proof === "../../" ? (
+            {data[index].proof === "" ? (
               ""
             ) : (
               <button
@@ -84,4 +84,4 @@ function PortfolioDetails4() {
   );
 }
 
-export default PortfolioDetails4;
+export default PortfolioDetails5;

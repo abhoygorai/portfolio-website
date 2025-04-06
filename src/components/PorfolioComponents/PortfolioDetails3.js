@@ -1,9 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
-import data from "../../pages/portfolio/experiencedata.json"
+import data from "../../pages/portfolio/experiencedata.json";
 
-function PortfolioDetails2() {
+// Intel Mentor
+function PortfolioDetails3() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
@@ -32,7 +33,7 @@ function PortfolioDetails2() {
           <div className="image-title-div">
             <img
               className="company-image mx-auto"
-              src= {"../" + data[index].image}
+              src={"../" + data[index].image}
               alt="logo"
             />
 
@@ -45,22 +46,24 @@ function PortfolioDetails2() {
           <div className="description-text-div">
             <ol>
               <li>
-                I was responsible for designing and making all the graphical content.
+                Mentored school students under the{" "}
+                <strong>Intel AI for Youth</strong> program, introducing
+                foundational concepts in Artificial Intelligence and Machine
+                Learning through hands-on activities and real-world examples.
               </li>
               <li>
-                I was working with the marketting team which increased our company reach and helped to build a web3 based community.
+                Successfully hosted a workshop attended by{" "}
+                <strong>150+ students</strong>, focusing on nurturing curiosity
+                and AI readiness among young minds.
+              </li>
+              <li>
+                Conducted a dedicated awareness session for{" "}
+                <strong>school staff and educators</strong>, highlighting the
+                importance of AI education at the school level and empowering
+                them to support student learning in this field.
               </li>
             </ol>
-
-            <h4 className="description">Some of my work</h4>
-            <div className="description-images">
-              <img className="sq-image" src="../projectImages/portfolio3-images/1.png" />
-              <img className="sq-image" src="../projectImages/portfolio3-images/2.png" />
-              <img className="sq-image" src="../projectImages/portfolio3-images/3.png" />
-              <img className="sq-image" src="../projectImages/portfolio3-images/4.jpg" />
-              <img className="sq-image" src="../projectImages/portfolio3-images/5.png" />
-              <img className="sq-image" src="../projectImages/portfolio3-images/6.png" />
-            </div>
+            <h4 className="description"></h4>
           </div>
           <div className="dowload-button-div">
             {data[index].proof === "../../" ? (
@@ -81,4 +84,4 @@ function PortfolioDetails2() {
   );
 }
 
-export default PortfolioDetails2;
+export default PortfolioDetails3;

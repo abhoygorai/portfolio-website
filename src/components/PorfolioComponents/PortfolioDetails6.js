@@ -3,15 +3,15 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/experiencedata.json";
 
-// Blokminers fullstack intern
-function PortfolioDetails4() {
+// Vimo Intern
+function PortfolioDetails6() {
   const [downloading, setDownloading] = useState(false);
 
   useEffect(() => {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 3;
+  const index = 4;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -45,28 +45,30 @@ function PortfolioDetails4() {
           </div>
           <div className="description-text-div">
             <ol>
-              <li>
-                Developed an admin dashboard for one of the biggest NFT
-                Marketplaces in India. This admin panel will be used by the
-                marketplace admin to launch and manage the NFTs in the market.
-              </li>
-              <li>
-                Developed a MERN stack E-Commerce platform for event ticket
-                purchasing. This application will be used to book tickets for
-                different types of events. Users can also register for their
-                events and sell the tickets on that website. More than 4000
-                tickets were booked after deployment.
-              </li>
-              <li>
-                Worked in the team developing an internal management system for
-                a company which helped them to manage their accounting
-                information.
-              </li>
+              <ul>
+                <li>
+                  Currently working as an{" "}
+                  <strong>
+                    Associate Software Engineer at Vimo India Pvt Ltd
+                  </strong>
+                  , playing a key role in major infrastructure upgrades and
+                  application modernization.
+                </li>
+                <li>
+                  Actively involved in migrating legacy codebase from AngularJS
+                  to ReactJS, improving code maintainability, performance, and
+                  developer experience.
+                </li>
+                <li>
+                  Designed and implemented new features that address real-world
+                  healthcare challenges, contributing directly to improving
+                  patient and provider experiences.
+                </li>
+              </ul>
             </ol>
-            <h4 className="description"></h4>
           </div>
           <div className="dowload-button-div">
-            {data[index].proof === "../../" ? (
+            {data[index].proof === "" ? (
               ""
             ) : (
               <button
@@ -84,4 +86,4 @@ function PortfolioDetails4() {
   );
 }
 
-export default PortfolioDetails4;
+export default PortfolioDetails6;

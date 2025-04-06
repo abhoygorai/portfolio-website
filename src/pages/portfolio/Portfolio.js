@@ -21,7 +21,7 @@ const Portfolio = () => {
     ));
 
   const ExperienceList = () =>
-    experienceData.map((exp, i) => (
+    [...experienceData].reverse().map((exp, i) => (
       <Experience
         key={i}
         id={exp.id}

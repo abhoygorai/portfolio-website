@@ -6,6 +6,8 @@ import PortfolioDetails1 from "../../components/PorfolioComponents/PortfolioDeta
 import PortfolioDetails2 from "../../components/PorfolioComponents/PortfolioDetails2";
 import PortfolioDetails3 from "../../components/PorfolioComponents/PortfolioDetails3"
 import PortfolioDetails4 from "../../components/PorfolioComponents/PortfolioDetails4"
+import PortfolioDetails5 from "../../components/PorfolioComponents/PortfolioDetails5"
+import PortfolioDetails6 from "../../components/PorfolioComponents/PortfolioDetails6"
 import PortfolioDetails11 from "../../components/PorfolioComponents/PortfolioDetails11";
 import PortfolioDetails12 from "../../components/PorfolioComponents/PortfolioDetails12";
 import PortfolioDetails13 from "../../components/PorfolioComponents/PortfolioDetails13";
@@ -28,6 +30,8 @@ function PortflioDescription() {
     2: <PortfolioDetails2 />,
     3: <PortfolioDetails3 />,
     4: <PortfolioDetails4 />,
+    5: <PortfolioDetails5 />,
+    6: <PortfolioDetails6 />,
 
     // projects
     11: <PortfolioDetails11 />,

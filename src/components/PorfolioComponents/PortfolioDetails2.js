@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./PortfolioDetails.css";
 import data from "../../pages/portfolio/experiencedata.json"
 
+// Blokminers Intern Graphic Designer
 function PortfolioDetails2() {
   const [downloading, setDownloading] = useState(false);
 
@@ -10,7 +11,7 @@ function PortfolioDetails2() {
     setDownloading(false);
   }, [downloading]);
 
-  const index = 2;
+  const index = 1;
 
   const handleDownload = () => {
     setDownloading(true);
@@ -45,22 +46,22 @@ function PortfolioDetails2() {
           <div className="description-text-div">
             <ol>
               <li>
-              Mentored school students in the field of Artificial Intelligence and Machine Learning. Successfully hosted a workshop having more than 150 students.
+                I was responsible for designing and making all the graphical content.
               </li>
               <li>
-                Developed a MERN stack E-Commerce platform for event ticket
-                purchasing. This application will be used to book tickets for
-                different types of events. Users can also register for their
-                events and sell the tickets on that website. More than 4000
-                tickets were booked after deployment.
-              </li>
-              <li>
-                Worked in the team developing an internal management system for
-                a company which helped them to manage their accounting
-                information.
+                I was working with the marketting team which increased our company reach and helped to build a web3 based community.
               </li>
             </ol>
-            <h4 className="description"></h4>
+
+            <h4 className="description">Some of my work</h4>
+            <div className="description-images">
+              <img className="sq-image" src="../projectImages/portfolio3-images/1.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/2.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/3.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/4.jpg" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/5.png" />
+              <img className="sq-image" src="../projectImages/portfolio3-images/6.png" />
+            </div>
           </div>
           <div className="dowload-button-div">
             {data[index].proof === "../../" ? (
